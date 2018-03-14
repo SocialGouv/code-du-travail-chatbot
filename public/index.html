@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Code du travail - Chat Bot</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="o-cb-open-icon">
+        <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/>
+        </svg>
+    </div>
+
+    <div class="o-cb o-cb--minimized">
+        <header class="o-cb__header">
+            <h1 class="o-cb__header__title">Code du travail - Alpha</h1>
+            <div class="o-cb__header__minimize-icon-wrapper">
+                <div class="c-cb__minimize-icon"></div>
+            </div>
+        </header>
+        <article class="o-cb__body">
+            <div class="c-cb__msg c-cb__msg--bot">
+                <span class="c-cb__msg__date">Code du travail</span>
+                <div class="c-cb__msg__body">
+                    <div class="c-cb__msg__body__content">Bonjour ! Posez votre question.</div>
+                </div>
+            </div>
+        </article>
+        <footer class="o-cb__footer">
+            <textarea class="o-cb__footer__input" name="message" placeholder="Entrez votre message"></textarea>
+            <svg class="o-cb__footer__input__icon" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+        </footer>
+    </div>
+
+    <script src="js/vendors/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <script src="js/chatbot.js"></script>
+
+</body>
+</html>
