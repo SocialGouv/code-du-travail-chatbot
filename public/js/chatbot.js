@@ -229,7 +229,7 @@
 
     $(function () {
 
-        socket = io('http://localhost:4200', {
+        socket = io({
             autoConnect: false
         });
 
